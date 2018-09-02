@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class Friction {
+    var dbPath: URL
+    init(path: URL) {
+        dbPath = path
+    }
+}
