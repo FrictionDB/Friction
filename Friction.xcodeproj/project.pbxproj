@@ -11,6 +11,7 @@
 		6832085E213BF61C002945AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
 		68B24907213D4541007AC74A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
 		68B24909213D45F8007AC74A /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
+		68BAD4C6213E39D0002320D8 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
 		8933C7851EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
 		8933C7861EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
 		8933C7871EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
@@ -117,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BAD4C6213E39D0002320D8 /* Friction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,7 @@
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				6832085C213BF61C002945AB /* CLI */,
 				52D6D97D1BEFF229002C0205 /* Products */,
+				68BAD4C5213E39D0002320D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +185,13 @@
 				68B24908213D45F8007AC74A /* FrictionCLI.swift */,
 			);
 			path = CLI;
+			sourceTree = "<group>";
+		};
+		68BAD4C5213E39D0002320D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
