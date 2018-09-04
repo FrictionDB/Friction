@@ -28,6 +28,7 @@ class FrictionCLI {
     func showHelp() {
         console.printUsage()
     }
+    
 }
 
 enum OptionType: String {

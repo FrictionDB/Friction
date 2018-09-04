@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Friction.framework */; };
 		6832085E213BF61C002945AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
+		68562995213E780400E25C3F /* AvailableTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562994213E780400E25C3F /* AvailableTypes.swift */; };
 		68B24907213D4541007AC74A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
 		68B24909213D45F8007AC74A /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
 		68BAD4C6213E39D0002320D8 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
@@ -67,6 +68,8 @@
 		52D6DA0F1BF000BD002C0205 /* Friction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Friction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6832085B213BF61C002945AB /* CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6832085D213BF61C002945AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		68562994213E780400E25C3F /* AvailableTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTypes.swift; sourceTree = "<group>"; };
+		68562996213E791800E25C3F /* FrictionDB - system.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "FrictionDB - system.md"; sourceTree = "<group>"; };
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		68B24908213D45F8007AC74A /* FrictionCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrictionCLI.swift; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
@@ -187,6 +190,14 @@
 			path = CLI;
 			sourceTree = "<group>";
 		};
+		68562993213E77E400E25C3F /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				68562994213E780400E25C3F /* AvailableTypes.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		68BAD4C5213E39D0002320D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +208,9 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				68562993213E77E400E25C3F /* Types */,
 				8933C7841EB5B820000D00A4 /* Friction.swift */,
+				68562996213E791800E25C3F /* FrictionDB - system.md */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -531,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8933C7851EB5B820000D00A4 /* Friction.swift in Sources */,
+				68562995213E780400E25C3F /* AvailableTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
