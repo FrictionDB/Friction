@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-import Foundation
 import Darwin.Mach.mach_time
 
 class ObjectsStream:NSObject {

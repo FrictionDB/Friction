@@ -11,6 +11,7 @@
 		6832085E213BF61C002945AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
 		68562995213E780400E25C3F /* AvailableTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562994213E780400E25C3F /* AvailableTypes.swift */; };
 		68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562998213E7EBD00E25C3F /* ObjectsStream.swift */; };
+		6856299C213E8E9100E25C3F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299B213E8E9100E25C3F /* Logger.swift */; };
 		68B24907213D4541007AC74A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
 		68B24909213D45F8007AC74A /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
 		68BAD4C6213E39D0002320D8 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
@@ -72,6 +73,7 @@
 		68562994213E780400E25C3F /* AvailableTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTypes.swift; sourceTree = "<group>"; };
 		68562996213E791800E25C3F /* FrictionDB - system.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "FrictionDB - system.md"; sourceTree = "<group>"; };
 		68562998213E7EBD00E25C3F /* ObjectsStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsStream.swift; sourceTree = "<group>"; };
+		6856299B213E8E9100E25C3F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		68B24908213D45F8007AC74A /* FrictionCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrictionCLI.swift; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
@@ -208,6 +210,14 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		6856299A213E8E8400E25C3F /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				6856299B213E8E9100E25C3F /* Logger.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
 		68BAD4C5213E39D0002320D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +228,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6856299A213E8E8400E25C3F /* Logs */,
 				68562997213E7E9B00E25C3F /* Objects */,
 				68562993213E77E400E25C3F /* Types */,
 				8933C7841EB5B820000D00A4 /* Friction.swift */,
@@ -557,6 +568,7 @@
 				8933C7851EB5B820000D00A4 /* Friction.swift in Sources */,
 				68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */,
 				68562995213E780400E25C3F /* AvailableTypes.swift in Sources */,
+				6856299C213E8E9100E25C3F /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
