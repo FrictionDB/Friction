@@ -228,6 +228,13 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
+		685629A1213EA90F00E25C3F /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
 		68BAD4C5213E39D0002320D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +245,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				685629A1213EA90F00E25C3F /* Entries */,
 				6856299D213E90D100E25C3F /* Crypto */,
 				6856299A213E8E8400E25C3F /* Logs */,
 				68562997213E7E9B00E25C3F /* Objects */,
