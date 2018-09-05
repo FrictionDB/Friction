@@ -28,12 +28,14 @@ Here are the authorized types:
 - `Float`
 - `Date`
 - `File`
+- `JSON` (As NSDictionnary)
 - `Password`
 - `StringArray`
 - `IntArray`
 - `FloatArray`
 - `DateArray`
 - `PasswordArray`
+- `JSONArray`
 #### Example:
 - `index.json`
 

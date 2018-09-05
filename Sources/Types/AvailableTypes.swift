@@ -12,10 +12,12 @@ enum FrictionTypes {
     case Float
     case Date
     case File
+    case JSON
     case Password
     case StringArray
     case IntArray
     case FloatArray
     case DateArray
     case PasswordArray
+    case JSONArray
 }
