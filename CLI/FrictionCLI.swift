@@ -23,12 +23,17 @@ class FrictionCLI {
         if getOption(arg).option == .help {
             showHelp()
             return
+        } else if getOption(arg).option == .create {
+            createDB()
+            return
         }
     }
     func showHelp() {
         console.printUsage()
     }
-    
+    func createDB() {
+        console.writeMessage("Creating DB...")
+    }
 }
 
 enum OptionType: String {
