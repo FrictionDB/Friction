@@ -17,6 +17,7 @@
 		685629A5213FFE8400E25C3F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685629A4213FFE8400E25C3F /* SwiftyJSON.framework */; };
 		685629A7213FFE9B00E25C3F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685629A6213FFE9A00E25C3F /* SwiftyJSON.framework */; };
 		685629A9213FFEAF00E25C3F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685629A8213FFEAF00E25C3F /* SwiftyJSON.framework */; };
+		68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
 		68B24907213D4541007AC74A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
 		68B24909213D45F8007AC74A /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
 		68BAD4C6213E39D0002320D8 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
@@ -84,6 +85,7 @@
 		685629A4213FFE8400E25C3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		685629A6213FFE9A00E25C3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/watchOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		685629A8213FFEAF00E25C3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		68990BC0214131E8001DCEC1 /* LoadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJSON.swift; sourceTree = "<group>"; };
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		68B24908213D45F8007AC74A /* FrictionCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrictionCLI.swift; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
@@ -243,8 +245,25 @@
 		685629A1213EA90F00E25C3F /* Entries */ = {
 			isa = PBXGroup;
 			children = (
+				68990BBE214131C2001DCEC1 /* Data Management */,
 			);
 			path = Entries;
+			sourceTree = "<group>";
+		};
+		68990BBE214131C2001DCEC1 /* Data Management */ = {
+			isa = PBXGroup;
+			children = (
+				68990BBF214131D7001DCEC1 /* JSON */,
+			);
+			path = "Data Management";
+			sourceTree = "<group>";
+		};
+		68990BBF214131D7001DCEC1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				68990BC0214131E8001DCEC1 /* LoadJSON.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		68BAD4C5213E39D0002320D8 /* Frameworks */ = {
@@ -601,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8933C7851EB5B820000D00A4 /* Friction.swift in Sources */,
+				68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */,
 				68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */,
 				68562995213E780400E25C3F /* AvailableTypes.swift in Sources */,
 				685629A0213E927800E25C3F /* sha256.swift in Sources */,
