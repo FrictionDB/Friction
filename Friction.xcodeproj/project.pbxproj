@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Friction.framework */; };
-		6832085E213BF61C002945AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
 		68562995213E780400E25C3F /* AvailableTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562994213E780400E25C3F /* AvailableTypes.swift */; };
 		68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562998213E7EBD00E25C3F /* ObjectsStream.swift */; };
 		6856299C213E8E9100E25C3F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299B213E8E9100E25C3F /* Logger.swift */; };
 		685629A0213E927800E25C3F /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299F213E927800E25C3F /* sha256.swift */; };
 		68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
-		68990BC9214147C7001DCEC1 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
 		68990BCD2141493E001DCEC1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
-		68B24907213D4541007AC74A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
-		68B24909213D45F8007AC74A /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
+		68CF9AAE21429F1B001C8378 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
+		68CF9AAF21429F1B001C8378 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
+		68CF9AB021429F1B001C8378 /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
+		68CF9AB32142A04E001C8378 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
+		68CF9AB42142A04E001C8378 /* Friction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8933C7851EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
 		8933C7861EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
 		8933C7871EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
@@ -37,7 +38,7 @@
 			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
 			remoteInfo = Friction;
 		};
-		68990BC7214140B5001DCEC1 /* PBXContainerItemProxy */ = {
+		68CF9AB52142A04E001C8378 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
 			proxyType = 1;
@@ -61,14 +62,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		68320859213BF61C002945AB /* CopyFiles */ = {
+		68CF9AB121429F2B001C8378 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF9AB72142A04E001C8378 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68CF9AB42142A04E001C8378 /* Friction.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -78,7 +90,6 @@
 		52D6D9E21BEFFF6E002C0205 /* Friction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Friction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* Friction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Friction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* Friction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Friction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6832085B213BF61C002945AB /* CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6832085D213BF61C002945AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		68562994213E780400E25C3F /* AvailableTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTypes.swift; sourceTree = "<group>"; };
 		68562996213E791800E25C3F /* FrictionDB - system.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "FrictionDB - system.md"; sourceTree = "<group>"; };
@@ -89,6 +100,7 @@
 		68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		68B24908213D45F8007AC74A /* FrictionCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrictionCLI.swift; sourceTree = "<group>"; };
+		68CF9A9E21429F09001C8378 /* CLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8933C7841EB5B820000D00A4 /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* FrictionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrictionTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* Friction.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Friction.plist; sourceTree = "<group>"; };
@@ -134,11 +146,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68320858213BF61C002945AB /* Frameworks */ = {
+		68CF9A9B21429F09001C8378 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68990BC9214147C7001DCEC1 /* Friction.framework in Frameworks */,
+				68CF9AB32142A04E001C8378 /* Friction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +195,7 @@
 				52D6DA0F1BF000BD002C0205 /* Friction.framework */,
 				DD75027A1C68FCFC006590AF /* Friction-macOS Tests.xctest */,
 				DD75028D1C690C7A006590AF /* Friction-tvOS Tests.xctest */,
-				6832085B213BF61C002945AB /* CLI */,
+				68CF9A9E21429F09001C8378 /* CLI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,23 +446,26 @@
 			productReference = 52D6DA0F1BF000BD002C0205 /* Friction.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6832085A213BF61C002945AB /* CLI */ = {
+		68CF9A9D21429F09001C8378 /* CLI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68320861213BF61C002945AB /* Build configuration list for PBXNativeTarget "CLI" */;
+			buildConfigurationList = 68CF9AAB21429F0F001C8378 /* Build configuration list for PBXNativeTarget "CLI" */;
 			buildPhases = (
-				68320857213BF61C002945AB /* Sources */,
-				68320858213BF61C002945AB /* Frameworks */,
-				68320859213BF61C002945AB /* CopyFiles */,
+				68CF9A9A21429F09001C8378 /* Sources */,
+				68CF9A9B21429F09001C8378 /* Frameworks */,
+				68CF9A9C21429F09001C8378 /* Resources */,
+				68CF9AB121429F2B001C8378 /* CopyFiles */,
+				68CF9AB221429F2F001C8378 /* ShellScript */,
+				68CF9AB72142A04E001C8378 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68990BC8214140B5001DCEC1 /* PBXTargetDependency */,
+				68CF9AB62142A04E001C8378 /* PBXTargetDependency */,
 			);
 			name = CLI;
 			productName = CLI;
-			productReference = 6832085B213BF61C002945AB /* CLI */;
-			productType = "com.apple.product-type.tool";
+			productReference = 68CF9A9E21429F09001C8378 /* CLI.app */;
+			productType = "com.apple.product-type.application";
 		};
 		DD7502791C68FCFC006590AF /* Friction-macOS Tests */ = {
 			isa = PBXNativeTarget;
@@ -516,9 +531,10 @@
 					};
 					52D6DA0E1BF000BD002C0205 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 73CCF549YB;
 						LastSwiftMigration = 0800;
 					};
-					6832085A213BF61C002945AB = {
+					68CF9A9D21429F09001C8378 = {
 						CreatedOnToolsVersion = 9.4.1;
 						DevelopmentTeam = 73CCF549YB;
 						ProvisioningStyle = Automatic;
@@ -539,6 +555,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 52D6D9721BEFF229002C0205;
 			productRefGroup = 52D6D97D1BEFF229002C0205 /* Products */;
@@ -552,7 +569,7 @@
 				52D6D9851BEFF229002C0205 /* Friction-iOS Tests */,
 				DD7502791C68FCFC006590AF /* Friction-macOS Tests */,
 				DD75028C1C690C7A006590AF /* Friction-tvOS Tests */,
-				6832085A213BF61C002945AB /* CLI */,
+				68CF9A9D21429F09001C8378 /* CLI */,
 			);
 		};
 /* End PBXProject section */
@@ -593,6 +610,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68CF9A9C21429F09001C8378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7502781C68FCFC006590AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,6 +632,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68CF9AB221429F2F001C8378 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n## Extracts the carthage CLI tool from its application bundle. Meant to be run\n# as part of an Xcode Run Script build phase.\ncp -v \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
@@ -656,13 +696,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68320857213BF61C002945AB /* Sources */ = {
+		68CF9A9A21429F09001C8378 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6832085E213BF61C002945AB /* main.swift in Sources */,
-				68B24907213D4541007AC74A /* ConsoleIO.swift in Sources */,
-				68B24909213D45F8007AC74A /* FrictionCLI.swift in Sources */,
+				68CF9AAF21429F1B001C8378 /* ConsoleIO.swift in Sources */,
+				68CF9AAE21429F1B001C8378 /* main.swift in Sources */,
+				68CF9AB021429F1B001C8378 /* FrictionCLI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,10 +730,10 @@
 			target = 52D6D97B1BEFF229002C0205 /* Friction-iOS */;
 			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
 		};
-		68990BC8214140B5001DCEC1 /* PBXTargetDependency */ = {
+		68CF9AB62142A04E001C8378 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52D6DA0E1BF000BD002C0205 /* Friction-macOS */;
-			targetProxy = 68990BC7214140B5001DCEC1 /* PBXContainerItemProxy */;
+			targetProxy = 68CF9AB52142A04E001C8378 /* PBXContainerItemProxy */;
 		};
 		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1011,9 +1051,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1039,9 +1080,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1063,10 +1105,10 @@
 			};
 			name = Release;
 		};
-		6832085F213BF61C002945AB /* Debug */ = {
+		68CF9AAC21429F0F001C8378 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1075,15 +1117,16 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CLI/CLI.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 73CCF549YB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.Friction.CLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1091,10 +1134,10 @@
 			};
 			name = Debug;
 		};
-		68320860213BF61C002945AB /* Release */ = {
+		68CF9AAD21429F0F001C8378 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1103,15 +1146,16 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CLI/CLI.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 73CCF549YB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.Friction.CLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1234,11 +1278,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68320861213BF61C002945AB /* Build configuration list for PBXNativeTarget "CLI" */ = {
+		68CF9AAB21429F0F001C8378 /* Build configuration list for PBXNativeTarget "CLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6832085F213BF61C002945AB /* Debug */,
-				68320860213BF61C002945AB /* Release */,
+				68CF9AAC21429F0F001C8378 /* Debug */,
+				68CF9AAD21429F0F001C8378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
