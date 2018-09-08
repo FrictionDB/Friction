@@ -19,6 +19,28 @@
 		68CF9AB021429F1B001C8378 /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
 		68CF9AB32142A04E001C8378 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
 		68CF9AB42142A04E001C8378 /* Friction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68F32E242143E0F2000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
+		68F32E252143E190000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
+		68F32E262143E190000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
+		68F32E272143E191000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
+		68F32E282143E19F000D9B31 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
+		68F32E292143E19F000D9B31 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
+		68F32E2A2143E1A0000D9B31 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
+		68F32E2C2143E1A4000D9B31 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
+		68F32E2D2143E1A5000D9B31 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
+		68F32E2E2143E1A5000D9B31 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
+		68F32E2F2143E1AA000D9B31 /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299F213E927800E25C3F /* sha256.swift */; };
+		68F32E302143E1AB000D9B31 /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299F213E927800E25C3F /* sha256.swift */; };
+		68F32E312143E1AB000D9B31 /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299F213E927800E25C3F /* sha256.swift */; };
+		68F32E322143E1AE000D9B31 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299B213E8E9100E25C3F /* Logger.swift */; };
+		68F32E332143E1AF000D9B31 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299B213E8E9100E25C3F /* Logger.swift */; };
+		68F32E342143E1AF000D9B31 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856299B213E8E9100E25C3F /* Logger.swift */; };
+		68F32E352143E1B1000D9B31 /* ObjectsStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562998213E7EBD00E25C3F /* ObjectsStream.swift */; };
+		68F32E362143E1B2000D9B31 /* ObjectsStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562998213E7EBD00E25C3F /* ObjectsStream.swift */; };
+		68F32E372143E1B2000D9B31 /* ObjectsStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562998213E7EBD00E25C3F /* ObjectsStream.swift */; };
+		68F32E382143E1B5000D9B31 /* AvailableTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562994213E780400E25C3F /* AvailableTypes.swift */; };
+		68F32E392143E1B5000D9B31 /* AvailableTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562994213E780400E25C3F /* AvailableTypes.swift */; };
+		68F32E3A2143E1B6000D9B31 /* AvailableTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68562994213E780400E25C3F /* AvailableTypes.swift */; };
 		8933C7851EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
 		8933C7861EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
 		8933C7871EB5B820000D00A4 /* Friction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Friction.swift */; };
@@ -101,6 +123,7 @@
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		68B24908213D45F8007AC74A /* FrictionCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrictionCLI.swift; sourceTree = "<group>"; };
 		68CF9A9E21429F09001C8378 /* CLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F32E232143E0F2000D9B31 /* PasswordChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChecker.swift; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* Friction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friction.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* FrictionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrictionTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* Friction.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Friction.plist; sourceTree = "<group>"; };
@@ -223,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				68562994213E780400E25C3F /* AvailableTypes.swift */,
+				68F32E232143E0F2000D9B31 /* PasswordChecker.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -654,6 +678,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F32E242143E0F2000D9B31 /* PasswordChecker.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* Friction.swift in Sources */,
 				68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */,
 				68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */,
@@ -676,7 +701,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F32E262143E190000D9B31 /* PasswordChecker.swift in Sources */,
+				68F32E332143E1AF000D9B31 /* Logger.swift in Sources */,
+				68F32E292143E19F000D9B31 /* LoadJSON.swift in Sources */,
+				68F32E362143E1B2000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* Friction.swift in Sources */,
+				68F32E392143E1B5000D9B31 /* AvailableTypes.swift in Sources */,
+				68F32E302143E1AB000D9B31 /* sha256.swift in Sources */,
+				68F32E2D2143E1A5000D9B31 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +716,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F32E272143E191000D9B31 /* PasswordChecker.swift in Sources */,
+				68F32E342143E1AF000D9B31 /* Logger.swift in Sources */,
+				68F32E2A2143E1A0000D9B31 /* LoadJSON.swift in Sources */,
+				68F32E372143E1B2000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* Friction.swift in Sources */,
+				68F32E3A2143E1B6000D9B31 /* AvailableTypes.swift in Sources */,
+				68F32E312143E1AB000D9B31 /* sha256.swift in Sources */,
+				68F32E2E2143E1A5000D9B31 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,7 +731,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F32E252143E190000D9B31 /* PasswordChecker.swift in Sources */,
+				68F32E322143E1AE000D9B31 /* Logger.swift in Sources */,
+				68F32E282143E19F000D9B31 /* LoadJSON.swift in Sources */,
+				68F32E352143E1B1000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* Friction.swift in Sources */,
+				68F32E382143E1B5000D9B31 /* AvailableTypes.swift in Sources */,
+				68F32E2F2143E1AA000D9B31 /* sha256.swift in Sources */,
+				68F32E2C2143E1A4000D9B31 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
