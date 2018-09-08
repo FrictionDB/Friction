@@ -26,7 +26,7 @@ class LoadJSON {
         }
     }
     
-    func parse(completionHandler: (JSON) -> Void) {
+    private func parse(completionHandler: (JSON) -> Void) {
         self.load { (data, error) in
             if error != nil {
                 logw((error as! Error).localizedDescription)
@@ -37,6 +37,12 @@ class LoadJSON {
                 let json = try JSON(data: data)
                 completionHandler(json)
             }
+        }
+    }
+    
+    func readFile(completionHandler: (Array<Any>) -> Void) {
+        parse { (json) in
+            completionHandler(json.arrayObject)
         }
     }
 }
