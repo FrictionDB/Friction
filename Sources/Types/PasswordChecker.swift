@@ -13,7 +13,7 @@ class PasswordChecker {
     init(json: String) {
         passwordJSON = json
     }
-    func check(psswd: String) {
+    func check(psswd: String) -> Bool {
         let sha256 = psswd.sha256
         return sha256 == passwordJSON
     }

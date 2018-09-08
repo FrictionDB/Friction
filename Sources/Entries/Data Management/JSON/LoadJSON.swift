@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 class LoadJSON {
     var file: URL
@@ -16,7 +15,7 @@ class LoadJSON {
         self.file = file
     }
     
-    private func load(completionHandler: (Data?, Error?) -> Void) {
+    private func load(completionHandler: @escaping (Data?, Error?) -> Void) {
         URLSession.shared.dataTask(with: file) { (data, response, error) in
             if error != nil {
                 completionHandler(nil, error)
@@ -26,7 +25,7 @@ class LoadJSON {
         }
     }
     
-    private func parse(completionHandler: (JSON) -> Void) {
+    private func parse(completionHandler: @escaping (JSON) -> Void) {
         self.load { (data, error) in
             if error != nil {
                 logw((error as! Error).localizedDescription)
@@ -34,15 +33,20 @@ class LoadJSON {
             }
             
             DispatchQueue.global(qos: .userInteractive).async {
-                let json = try JSON(data: data)
-                completionHandler(json)
+                do {
+                    let json = try JSON(data: data!)
+                    completionHandler(json)
+                } catch {
+                    print("Error")
+                }
+                completionHandler(JSON(arrayLiteral: []))
             }
         }
     }
     
-    func readFile(completionHandler: (Array<Any>) -> Void) {
+    func readFile(completionHandler: @escaping (Array<Any>) -> Void) {
         parse { (json) in
-            completionHandler(json.arrayObject)
+            completionHandler(json.arrayObject!)
         }
     }
 }
