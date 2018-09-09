@@ -16,6 +16,10 @@
 		6896A0182144D05900315E0F /* WriteJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0162144CFCE00315E0F /* WriteJSON.swift */; };
 		6896A0192144D05A00315E0F /* WriteJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0162144CFCE00315E0F /* WriteJSON.swift */; };
 		6896A01A2144D05B00315E0F /* WriteJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0162144CFCE00315E0F /* WriteJSON.swift */; };
+		6896A01C21450C3400315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
+		6896A01D21450D6500315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
+		6896A01E21450D6600315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
+		6896A01F21450D6700315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
 		68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
 		68990BCD2141493E001DCEC1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
 		68CF9AAE21429F1B001C8378 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
@@ -123,6 +127,7 @@
 		6856299B213E8E9100E25C3F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		6856299F213E927800E25C3F /* sha256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sha256.swift; sourceTree = "<group>"; };
 		6896A0162144CFCE00315E0F /* WriteJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteJSON.swift; sourceTree = "<group>"; };
+		6896A01B21450C3400315E0F /* TableConformity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableConformity.swift; sourceTree = "<group>"; };
 		68990BC0214131E8001DCEC1 /* LoadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJSON.swift; sourceTree = "<group>"; };
 		68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
@@ -250,6 +255,7 @@
 		68562993213E77E400E25C3F /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				6896A01B21450C3400315E0F /* TableConformity.swift */,
 				68562994213E780400E25C3F /* AvailableTypes.swift */,
 				68F32E232143E0F2000D9B31 /* PasswordChecker.swift */,
 			);
@@ -690,6 +696,7 @@
 				68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */,
 				68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */,
 				68562995213E780400E25C3F /* AvailableTypes.swift in Sources */,
+				6896A01C21450C3400315E0F /* TableConformity.swift in Sources */,
 				685629A0213E927800E25C3F /* sha256.swift in Sources */,
 				68990BCD2141493E001DCEC1 /* SwiftyJSON.swift in Sources */,
 				6856299C213E8E9100E25C3F /* Logger.swift in Sources */,
@@ -714,6 +721,7 @@
 				68F32E292143E19F000D9B31 /* LoadJSON.swift in Sources */,
 				68F32E362143E1B2000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* Friction.swift in Sources */,
+				6896A01E21450D6600315E0F /* TableConformity.swift in Sources */,
 				68F32E392143E1B5000D9B31 /* AvailableTypes.swift in Sources */,
 				68F32E302143E1AB000D9B31 /* sha256.swift in Sources */,
 				68F32E2D2143E1A5000D9B31 /* SwiftyJSON.swift in Sources */,
@@ -730,6 +738,7 @@
 				68F32E2A2143E1A0000D9B31 /* LoadJSON.swift in Sources */,
 				68F32E372143E1B2000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* Friction.swift in Sources */,
+				6896A01F21450D6700315E0F /* TableConformity.swift in Sources */,
 				68F32E3A2143E1B6000D9B31 /* AvailableTypes.swift in Sources */,
 				68F32E312143E1AB000D9B31 /* sha256.swift in Sources */,
 				68F32E2E2143E1A5000D9B31 /* SwiftyJSON.swift in Sources */,
@@ -746,6 +755,7 @@
 				68F32E282143E19F000D9B31 /* LoadJSON.swift in Sources */,
 				68F32E352143E1B1000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* Friction.swift in Sources */,
+				6896A01D21450D6500315E0F /* TableConformity.swift in Sources */,
 				68F32E382143E1B5000D9B31 /* AvailableTypes.swift in Sources */,
 				68F32E2F2143E1AA000D9B31 /* sha256.swift in Sources */,
 				68F32E2C2143E1A4000D9B31 /* SwiftyJSON.swift in Sources */,
