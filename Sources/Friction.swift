@@ -8,15 +8,20 @@
 
 import Foundation
 
-class Friction {
-    func createDB(path: URL, backup: JSON?) {
+public class Friction: NSObject {
+    override init() {
+        super.init()
+    }
+    public let `default` = Friction()
+    
+    public func createDB(path: URL, backup: JSON?) {
         let manager = CreateDB(url: path, backup: backup)
         manager.create()
     }
 }
 
-extension Friction {
-    var version: String {
+public extension Friction {
+    public var version: String {
         return "0.1.0"
     }
 }

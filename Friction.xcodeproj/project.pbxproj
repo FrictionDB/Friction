@@ -24,13 +24,13 @@
 		6896A02321451B3E00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
 		6896A02421451B3F00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
 		6896A02521451B3F00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
+		6896A02A214520B600315E0F /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
+		6896A02B214520B600315E0F /* Friction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
 		68990BCD2141493E001DCEC1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
 		68CF9AAE21429F1B001C8378 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
 		68CF9AAF21429F1B001C8378 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24906213D4541007AC74A /* ConsoleIO.swift */; };
 		68CF9AB021429F1B001C8378 /* FrictionCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B24908213D45F8007AC74A /* FrictionCLI.swift */; };
-		68CF9AB32142A04E001C8378 /* Friction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; };
-		68CF9AB42142A04E001C8378 /* Friction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Friction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68F32E242143E0F2000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
 		68F32E252143E190000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
 		68F32E262143E190000D9B31 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F32E232143E0F2000D9B31 /* PasswordChecker.swift */; };
@@ -72,7 +72,7 @@
 			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
 			remoteInfo = Friction;
 		};
-		68CF9AB52142A04E001C8378 /* PBXContainerItemProxy */ = {
+		6896A02C214520B600315E0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
 			proxyType = 1;
@@ -96,6 +96,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6896A02E214520B600315E0F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6896A02B214520B600315E0F /* Friction.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68CF9AB121429F2B001C8378 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,17 +114,6 @@
 			dstSubfolderSpec = 7;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68CF9AB72142A04E001C8378 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				68CF9AB42142A04E001C8378 /* Friction.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -188,7 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68CF9AB32142A04E001C8378 /* Friction.framework in Frameworks */,
+				6896A02A214520B600315E0F /* Friction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,13 +504,12 @@
 				68CF9A9B21429F09001C8378 /* Frameworks */,
 				68CF9A9C21429F09001C8378 /* Resources */,
 				68CF9AB121429F2B001C8378 /* CopyFiles */,
-				68CF9AB221429F2F001C8378 /* ShellScript */,
-				68CF9AB72142A04E001C8378 /* Embed Frameworks */,
+				6896A02E214520B600315E0F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68CF9AB62142A04E001C8378 /* PBXTargetDependency */,
+				6896A02D214520B600315E0F /* PBXTargetDependency */,
 			);
 			name = CLI;
 			productName = CLI;
@@ -683,22 +682,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		68CF9AB221429F2F001C8378 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n## Extracts the carthage CLI tool from its application bundle. Meant to be run\n# as part of an Xcode Run Script build phase.\ncp -v \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -814,10 +797,10 @@
 			target = 52D6D97B1BEFF229002C0205 /* Friction-iOS */;
 			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
 		};
-		68CF9AB62142A04E001C8378 /* PBXTargetDependency */ = {
+		6896A02D214520B600315E0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52D6DA0E1BF000BD002C0205 /* Friction-macOS */;
-			targetProxy = 68CF9AB52142A04E001C8378 /* PBXContainerItemProxy */;
+			targetProxy = 6896A02C214520B600315E0F /* PBXContainerItemProxy */;
 		};
 		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

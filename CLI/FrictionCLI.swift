@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import Friction
 
 class FrictionCLI {
     let console = ConsoleIO()
+    let friction = Friction
     func getOption(_ option: String) -> (option:OptionType, value: String) {
         return (OptionType(value: option), option)
     }
@@ -33,6 +35,7 @@ class FrictionCLI {
     }
     func createDB() {
         console.writeMessage("Creating DB...")
+        
     }
 }
 
