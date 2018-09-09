@@ -9,8 +9,14 @@
 import Foundation
 
 class Friction {
-    var dbPath: URL
-    init(path: URL) {
-        dbPath = path
+    func createDB(path: URL, backup: JSON?) {
+        let manager = CreateDB(url: path, backup: backup)
+        manager.create()
+    }
+}
+
+extension Friction {
+    var version: String {
+        return "0.1.0"
     }
 }

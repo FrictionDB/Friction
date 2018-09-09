@@ -65,3 +65,17 @@ Here are the authorized types:
 	...
 }]
 ```
+
+## Ref: `index.json`
+Here is a default `index.json`:
+```json
+{
+	"created": "1475491615.71278",
+    "version": "1.0.0", // FrictionDB version
+    "backup": {
+    	url: "https://github.com/FrictionDB/example",
+        username: "arguiot",
+        token: "asd4refsder..."
+    }
+}
+```

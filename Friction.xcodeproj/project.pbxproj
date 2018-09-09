@@ -20,6 +20,10 @@
 		6896A01D21450D6500315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
 		6896A01E21450D6600315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
 		6896A01F21450D6700315E0F /* TableConformity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A01B21450C3400315E0F /* TableConformity.swift */; };
+		6896A0222145105F00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
+		6896A02321451B3E00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
+		6896A02421451B3F00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
+		6896A02521451B3F00315E0F /* CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896A0212145105F00315E0F /* CreateDB.swift */; };
 		68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BC0214131E8001DCEC1 /* LoadJSON.swift */; };
 		68990BCD2141493E001DCEC1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */; };
 		68CF9AAE21429F1B001C8378 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832085D213BF61C002945AB /* main.swift */; };
@@ -128,6 +132,7 @@
 		6856299F213E927800E25C3F /* sha256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sha256.swift; sourceTree = "<group>"; };
 		6896A0162144CFCE00315E0F /* WriteJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteJSON.swift; sourceTree = "<group>"; };
 		6896A01B21450C3400315E0F /* TableConformity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableConformity.swift; sourceTree = "<group>"; };
+		6896A0212145105F00315E0F /* CreateDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDB.swift; sourceTree = "<group>"; };
 		68990BC0214131E8001DCEC1 /* LoadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJSON.swift; sourceTree = "<group>"; };
 		68990BCC2141493E001DCEC1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		68B24906213D4541007AC74A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
@@ -294,6 +299,14 @@
 			path = Entries;
 			sourceTree = "<group>";
 		};
+		6896A0202145104F00315E0F /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				6896A0212145105F00315E0F /* CreateDB.swift */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
 		68990BBE214131C2001DCEC1 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +335,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6896A0202145104F00315E0F /* Init */,
 				685629A1213EA90F00E25C3F /* Entries */,
 				6856299D213E90D100E25C3F /* Crypto */,
 				6856299A213E8E8400E25C3F /* Logs */,
@@ -694,6 +708,7 @@
 				68F32E242143E0F2000D9B31 /* PasswordChecker.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* Friction.swift in Sources */,
 				68990BC1214131E8001DCEC1 /* LoadJSON.swift in Sources */,
+				6896A0222145105F00315E0F /* CreateDB.swift in Sources */,
 				68562999213E7EBD00E25C3F /* ObjectsStream.swift in Sources */,
 				68562995213E780400E25C3F /* AvailableTypes.swift in Sources */,
 				6896A01C21450C3400315E0F /* TableConformity.swift in Sources */,
@@ -719,6 +734,7 @@
 				68F32E262143E190000D9B31 /* PasswordChecker.swift in Sources */,
 				68F32E332143E1AF000D9B31 /* Logger.swift in Sources */,
 				68F32E292143E19F000D9B31 /* LoadJSON.swift in Sources */,
+				6896A02421451B3F00315E0F /* CreateDB.swift in Sources */,
 				68F32E362143E1B2000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* Friction.swift in Sources */,
 				6896A01E21450D6600315E0F /* TableConformity.swift in Sources */,
@@ -736,6 +752,7 @@
 				68F32E272143E191000D9B31 /* PasswordChecker.swift in Sources */,
 				68F32E342143E1AF000D9B31 /* Logger.swift in Sources */,
 				68F32E2A2143E1A0000D9B31 /* LoadJSON.swift in Sources */,
+				6896A02521451B3F00315E0F /* CreateDB.swift in Sources */,
 				68F32E372143E1B2000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* Friction.swift in Sources */,
 				6896A01F21450D6700315E0F /* TableConformity.swift in Sources */,
@@ -753,6 +770,7 @@
 				68F32E252143E190000D9B31 /* PasswordChecker.swift in Sources */,
 				68F32E322143E1AE000D9B31 /* Logger.swift in Sources */,
 				68F32E282143E19F000D9B31 /* LoadJSON.swift in Sources */,
+				6896A02321451B3E00315E0F /* CreateDB.swift in Sources */,
 				68F32E352143E1B1000D9B31 /* ObjectsStream.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* Friction.swift in Sources */,
 				6896A01D21450D6500315E0F /* TableConformity.swift in Sources */,
