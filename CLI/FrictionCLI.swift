@@ -11,7 +11,7 @@ import Friction
 
 class FrictionCLI {
     let console = ConsoleIO()
-    let friction = Friction
+    let friction = Friction()
     func getOption(_ option: String) -> (option:OptionType, value: String) {
         return (OptionType(value: option), option)
     }
@@ -25,17 +25,21 @@ class FrictionCLI {
         if getOption(arg).option == .help {
             showHelp()
             return
-        } else if getOption(arg).option == .create {
-            createDB()
+        } else if getOption(arg).option == .create && CommandLine.argc > 2 {
+            let path = CommandLine.arguments[2]
+            createDB(arg: path)
             return
         }
+        showHelp()
     }
     func showHelp() {
         console.printUsage()
     }
-    func createDB() {
-        console.writeMessage("Creating DB...")
-        
+    func createDB(arg: String) {
+        let location = NSString(string: arg).expandingTildeInPath
+        let path = URL(string: location)!
+        console.writeMessage("Creating DB in \(path.absoluteString)")
+        friction.createDB(path: path, backup: nil)
     }
 }
 

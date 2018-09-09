@@ -9,11 +9,9 @@
 import Foundation
 
 public class Friction: NSObject {
-    override init() {
+    public override init() {
         super.init()
     }
-    public let `default` = Friction()
-    
     public func createDB(path: URL, backup: JSON?) {
         let manager = CreateDB(url: path, backup: backup)
         manager.create()

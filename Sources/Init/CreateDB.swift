@@ -20,7 +20,7 @@ class CreateDB {
     
     private func createDir(path: URL) {
         do {
-            try fm.createDirectory(at: path, withIntermediateDirectories: true, attributes: nil)
+            try fm.createDirectory(atPath: path.absoluteString, withIntermediateDirectories: true, attributes: nil)
         } catch {
             logw("CreateDB: couldn't create directory")
         }
@@ -43,6 +43,7 @@ class CreateDB {
         }
     }
     func create() {
+        createDir(path: path)
         createDir(path: path.appendingPathComponent("Objects", isDirectory: true))
         createDir(path: path.appendingPathComponent("Entries", isDirectory: true))
         createDir(path: path.appendingPathComponent("Logs", isDirectory: true))
