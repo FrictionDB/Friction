@@ -11,7 +11,7 @@ import Friction
 
 class FrictionCLI {
     let console = ConsoleIO()
-    let friction = Friction()
+    
     func getOption(_ option: String) -> (option:OptionType, value: String) {
         return (OptionType(value: option), option)
     }
@@ -38,8 +38,11 @@ class FrictionCLI {
     func createDB(arg: String) {
         let location = NSString(string: arg).expandingTildeInPath
         let path = URL(string: location)!
+        
+        let friction = Friction(db: path)
+        
         console.writeMessage("Creating DB in \(path.absoluteString)")
-        friction.createDB(path: path, backup: nil)
+        friction.createDB(backup: nil)
     }
 }
 
